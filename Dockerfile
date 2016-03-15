@@ -11,6 +11,8 @@ RUN \
 
 COPY ./clustercheck /
 
+RUN chmod +x /clustercheck
+
 ENTRYPOINT ["/clustercheck"]
 
 EXPOSE 8000
