@@ -51,7 +51,7 @@ class ServerStatus(resource.Resource):
 
             try:
                 #conn = MySQLdb.connect(read_default_file = opts.cnf_file,
-                conn = MySQLdb.connect(host = "0.0.0.0",
+                conn = MySQLdb.connect(host = "localhost",
                                        user = "clustercheckuser",
                                        passwd = "clustercheckpassword!",
                                        connect_timeout = opts.c_timeout,
