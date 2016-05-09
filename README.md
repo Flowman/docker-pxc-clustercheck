@@ -16,7 +16,7 @@ This image is based on the popular Alpine Linux project, available in the alpine
 
 Example Rancher docker-compose stack
 
-```
+```yaml
 pxc:
   image: flowman/percona-xtradb-cluster-confd:v0.2.0
   labels:
@@ -52,7 +52,7 @@ pxc-data:
 
 Example rancher-compose for monitoring pxc
 
-```
+```yaml
 pxc:
   scale: 3
   health_check:
@@ -83,7 +83,7 @@ pxc:
 
 For example, if you need to change anything, edit the Dockerfile and than build-it.
 
-```
+```bash
 git clone git@github.com:Flowman/percona-xtradb-cluster-clustercheck.git
 cd ./percona-xtradb-cluster-clustercheck
 docker build --rm -t flowman/percona-xtradb-cluster-clustercheck .
